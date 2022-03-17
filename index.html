@@ -15,6 +15,8 @@
     <title>megabox</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -403,7 +405,21 @@
                 <div class="benefit">
                     <div class="slide">
                         <div class="position">
-                            <div class="txt">
+                            <div class="swiper1 swiper mySwiper txt">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><a href="javascript:"><img src="./img/b-slide-txt_1.jpg" alt="오리지널 티켓"></a></div>
+                                  <div class="swiper-slide"><a href="javascript:"><img src="./img/b-slide-txt_2.jpg" alt="멤버십 이벤트"></a></div>
+                                  <div class="swiper-slide"><a href="javascript:"><img src="./img/b-slide-txt_3.jpg" alt="u+멤버십 할인"></a></div>
+                                </div>
+                            </div>
+                            <div class="swiper2 swiper mySwiper bg">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><a href="javascript:"><img src="./img/b-slide-bg_1.jpg" alt="오리지널 티켓"></a></div>
+                                  <div class="swiper-slide"><a href="javascript:"><img src="./img/b-slide-bg_2.jpg" alt="멤버십 이벤트"></a></div>
+                                  <div class="swiper-slide"><a href="javascript:"><img src="./img/b-slide-bg_3.jpg" alt="u+멤버십 할인"></a></div>
+                                </div>
+                            </div>
+                            <!-- <div class="txt">
                                 <a href="javascript:"><img src="./img/b-slide-txt_1.jpg" alt="오리지널 티켓"></a>
                                 <a href="javascript:"><img src="./img/b-slide-txt_2.jpg" alt="멤버십 이벤트"></a>
                                 <a href="javascript:"><img src="./img/b-slide-txt_3.jpg" alt="u+멤버십 할인"></a>
@@ -412,8 +428,11 @@
                                 <a href="javasript:"><img src="./img/b-slide-bg_1.jpg" alt="오리지널 티켓"></a>
                                 <a href="javasript:"><img src="./img/b-slide-bg_2.jpg" alt="멤버십 이벤트"></a>
                                 <a href="javasript:"><img src="./img/b-slide-bg_3.jpg" alt="u+멤버십 할인"></a>
+                            </div> -->
+                            <div class="ctr-bar">
+                                <span class="on"></span>
+                                <span></span>
                             </div>
-                            <div class="ctr-bar"></div>
                         </div>
                     </div>
                     <div class="banner">
@@ -456,7 +475,7 @@
                         <img src="./img/bg-bage-curation-classic.png" alt="메가박스 클래식 소사이어티">
                     </div>
                     <div class="button">
-                        <a class="info" href="#">상세정보</a>
+                        <a class="cu-info" href="#">상세정보</a>
                         <a class="booking" href="#">예매</a>
                     </div>
                 </div>

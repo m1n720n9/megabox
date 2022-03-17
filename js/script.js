@@ -115,7 +115,7 @@ audienceTop.addEventListener('click', function(){
     audienceTopImg.classList.add('active');
     bookingTopImg.classList.remove('active');
 });
-
+/* 
 const depth1=document.querySelectorAll('.gnb>li');
 const notdepth1=document.querySelector('.notdepth')
 const depth2=document.querySelectorAll('.gnb>li>.depth2');
@@ -135,7 +135,7 @@ for(let i=0; i<depth1.length; i++){
         gnbBg.style.display='none';
         depth1[i].classList.remove('active');
     });
-};
+}; */
 
 /* movie-chart */
 const moviePoster=document.querySelectorAll('.movie-chart>.list>li>.posterwrap');
@@ -189,3 +189,47 @@ for(let i=0; i<blackImg.length; i++){
     });
 };
 
+
+//Slide Initialize Swiper
+var swiper1 = new Swiper(".swiper1", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    direction: "vertical",
+    speed:500,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    }
+});
+
+var swiper2 = new Swiper(".swiper2", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    speed:500,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    }
+}); 
+
+
+
+const depth1=document.querySelectorAll('.gnb>li');
+const depth2=document.querySelectorAll('.gnb>li>.depth2');
+const gnbBg=document.querySelector('.gnb-bg');
+
+for(let i=0; i<depth1.length; i++){
+    depth1[i].addEventListener('mouseover', function(){
+        depth2[i].classList.add('on');
+        gnbBg.style.display='block';
+        depth1[i].classList.add('active');
+    });
+    notdepth1.addEventListener('mouseover', function(){
+        gnbBg.style.display='none';
+    });
+    depth1[i].addEventListener('mouseout', function(){
+        depth2[i].classList.remove('on');
+        gnbBg.style.display='none';
+        depth1[i].classList.remove('active');
+    });
+};
