@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name='Title' content='메가박스'>
+	<meta name='Subject' content='메가박스'>
+	<meta name='Keywords' content='영화, 메가박스, 예매, movie'>
+	<meta name='Author' content='min'>
+	<meta name='Publisher' content='min'>
+	<meta name='Description' content='메가박스에 오신 것을 환영합니다.'>
+	<meta name='Author-Date' content='202202017'>
+	<meta name='Robots' content='index,follow'>
+    <title>megabox</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <ul id="skip">
+		<li><a href="#header">헤더 바로가기</a></li>
+		<li><a href="#nav">메뉴 바로가기</a></li>
+		<li><a href="#content">내용 바로가기</a></li>
+		<li><a href="#footer">푸터 바로가기</a></li>
+	</ul>
+    <header id="header">
+        <div class="container">
+            <h1 class="logo"><a href="#" title="logo"></a></h1>
+            <div class="h-inner-top">
+                <ul class="top-menu">
+                    <li><a href="#">VIP LOUNGE</a></li>
+                    <li><a href="#">멤버십</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+                <ul class="top-menu">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">빠른예매</a></li>
+                </ul>
+            </div>    
+            <div id="nav">
+                <div class="left-nav">
+                    <div class="link-area">
+                        <a href="#" class="sitemap-btn"><img src="./img/ico-sitemap-white.png" alt="sitemapIcon"></a>
+                        <a href="#" class="search-btn"><img src="./img/ico-search-white.png" alt="searchIcon"></a>
+                    </div>
+                    <ul class="left-gnb gnb">
+                        <li><a href="#"><img src="./img/gnb-txt-movie-white.png" alt="영화"></a>
+                            <ul class="depth2 depth2-1">
+                                <li><a href="#">전체영화</a></li>
+                                <li><a href="#">큐레이션</a></li>
+                                <li><a href="#">무비포스트</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><img src="./img/gnb-txt-reserve-white.png" alt="예매"></a>
+                            <ul class="depth2 depth2-2">
+                                <li><a href="#">빠른예매</a></li>
+                                <li><a href="#">상영시간표</a></li>
+                                <li><a href="#">더 부티크 프라이빗 예매</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><img src="./img/gnb-txt-theater-white.png" alt="극장"></a>
+                            <ul class="depth2 depth2-3">
+                                <li><a href="#">전체극장</a></li>
+                                <li><a href="#">특별관</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-nav">
+                    <ul class="right-gnb gnb">
+                        <li><a href="#" class="gnb-s"><img src="./img/gnb-txt-event-white.png" alt="이벤트"></a>
+                            <ul class="depth2 depth2-4">
+                                <li><a href="#">진행중 이벤트</a></li>
+                                <li><a href="#">지난 이벤트</a></li>
+                                <li><a href="#">당첨자발표</a></li>
+                            </ul>
+                        </li>
+                        <li class="notdepth"><a href="#" class="gnb-s border_none"><img src="./img/gnb-txt-store-white.png" alt="스토어"></a>
+                            <ul class="depth2 depth2-5">
+                                <li>&nbsp;</li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><img src="./img/gnb-txt-benefit-white.png" alt="혜택"></a>
+                            <ul class="depth2 depth2-5">
+                                <li><a href="#">메가박스 멤버십</a></li>
+                                <li><a href="#">제휴/할인</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="link-area">
+                        <a href="#" class="booking"><img src="./img/ico-schedule-white.png" alt="bookingIcon"></a>
+                        <a href="#" class="mypage"><img src="./img/ico-mymega-white.png" alt="mypageIcon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gnb-bg"></div>
+        <div class="sitemap">
+            <div class="container">
+                <h2>SITEMAP</h2>
+                <div class="site_wrap">
+                    <div class="site site1">
+                        <p>영화</p>
+                        <ul>
+                            <li><a href="#">전체영화</a></li>
+                            <li><a href="#">큐레이션</a></li>
+                            <li><a href="#">영화제</a></li>
+                            <li><a href="#">무비포스트</a></li>
+                        </ul>
+                    </div>
+                    <div class="site site2">
+                        <p>예매</p>
+                        <ul>
+                            <li><a href="#">빠른예매</a></li>
+                            <li><a href="#">상영시간표</a></li>
+                            <li><a href="#">더 부티크 프라이빗 예매</a></li>
+                        </ul>
+                    </div>
+                    <div class="site site3">
+                        <p>극장</p>
+                        <ul>
+                            <li><a href="#">전체극장</a></li>
+                            <li><a href="#">특별관</a></li>
+                        </ul>
+                    </div>
+                    <div class="site site4">
+                        <p>이벤트</p>
+                        <ul>
+                            <li><a href="#">진행중 이벤트</a></li>
+                            <li><a href="#">지난 이벤트</a></li>
+                            <li><a href="#">당첨자 발표</a></li>
+                        </ul>
+                    </div>
+                    <div class="site site5">
+                        <p>스토어</p>
+                        <ul>
+                            <li><a href="#">새로운 상품</a></li>
+                            <li><a href="#">메가티켓</a></li>
+                            <li><a href="#">메가찬스</a></li>
+                            <li><a href="#">팝콘/음료/굿즈</a></li>
+                        </ul>
+                    </div>
+                    <div class="site site6">
+                        <p>나의 메가박스</p>
+                        <ul>
+                            <li><a href="#">나의 메가박스 홈</a></li>
+                            <li><a href="#">예매/구매내역</a></li>
+                            <li><a href="#">영화관람권</a></li>
+                            <li><a href="#">스토어교환권</a></li>
+                            <li><a href="#">할인/제휴쿠폰</a></li>
+                            <li><a href="#">멤버십포인트</a></li>
+                            <li><a href="#">나의 무비스토리</a></li>
+                            <li><a href="#">나의 이벤트 응모내역</a></li>
+                            <li><a href="#">나의 문의내역</a></li>
+                            <li><a href="#">자주쓰는 할인 카드</a></li>
+                            <li><a href="#">회원정보</a></li>
+                        </ul>
+                    </div>
+                    <div class="site site7">
+                        <p>혜택</p>
+                        <ul>
+                            <li><a href="#">멤버십 안내</a></li>
+                            <li><a href="#">VIP LOUNGE</a></li>
+                            <li><a href="#">제휴/할인</a></li>
+                        </ul>
+                    </div>
+                    <div class="site site8">
+                        <p>고객센터</p>
+                        <ul>
+                            <li><a href="#">고객센터 홈</a></li>
+                            <li><a href="#">자주묻는질문</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                            <li><a href="#">단체/대관문의</a></li>
+                            <li><a href="#">분실물문의</a></li>
+                        </ul>
+                    </div>
+                    <div class="site site9">
+                        <p>회사소개</p>
+                        <ul>
+                            <li><a href="#">메가박스 소개</a></li>
+                            <li><a href="#">사회공헌</a></li>
+                            <li><a href="#">홍보자료</a></li>
+                            <li><a href="#">제휴/부대사업문의</a></li>
+                            <li><a href="#">온라인제보센터</a></li>
+                            <li><a href="#">IR자료</a></li>
+                            <li><a href="#">인재채용</a></li>
+                            <li><a href="#">윤리경영</a></li>
+                        </ul>
+                    </div>
+                    <div class="site site10">
+                        <p>이용정책</p>
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">위치기반서비스 이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">스크린수배정에관한기준</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-wrap">
+            <div class="container">
+                <div class="tab-rank">
+                    <ul>
+                        <li class="on booking-top"><a href="javascript:">예매율 순</a></li>
+                        <li class="audience-top"><a href="javascript:">메가박스 관객순</a></li>
+                    </ul>
+                </div>
+                <div class="rank-con">
+                    <div class="list">
+                        <p class="img">
+                            <img src="./img/tab-con-img1.jpg" alt="더 배트맨" class="active b-t-img">
+                            <img src="./img/tab-con-img2.jpg" alt="스파이더맨 노웨이홈" class="a-t-img">
+                        </p>
+                        <ol class="active b-t-list">
+                            <li>
+                                <em>1</em>
+                                <a href="javascript:">더 배트맨</a>
+                            </li>
+                            <li>
+                                <em>2</em>
+                                <a href="javascript:">스파이더맨: 노 웨이 홈</a>
+                            </li>
+                            <li>
+                                <em>3</em>
+                                <a href="javascript:">해적: 도깨비 깃발</a>
+                            </li>
+                            <li>
+                                <em>4</em>
+                                <a href="javascript:">안테벨룸</a>
+                            </li>
+                            <li>
+                                <em>5</em>
+                                <a href="javascript:">언차티드</a>
+                            </li>
+                        </ol>
+                        <ol class="a-t-list">
+                            <li>
+                                <em>1</em>
+                                <a href="javascript:">스파이더맨: 노 웨이 홈</a>
+                            </li>
+                            <li>
+                                <em>2</em>
+                                <a href="javascript:">해적: 도깨비 깃발</a>
+                            </li>
+                            <li>
+                                <em>3</em>
+                                <a href="javascript:">씽2게더</a>
+                            </li>
+                            <li>
+                                <em>4</em>
+                                <a href="javascript:">킹메이커</a>
+                            </li>
+                            <li>
+                                <em>5</em>
+                                <a href="javascript:">언차티드</a>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="h-search">
+                        <input type="text" title="영화 제목 검색" placeholder="영화를 검색하세요">
+                        <button>검색</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mypage-wrap">
+            <p>로그인 하시면 나의 메가박스를 만날 수 있어요. <br>
+                영화를 사랑하는 당신을 위한 꼭 맞는 혜택까지 확인해 보세요!
+            </p>
+            <div class="login"><a href="#" title="login">로그인</a></div>
+            <a href="#" class="join" title="join">혹시 아직 회원이 아니신가요?</a>
+        </div>
+    </header>
+    <section class="movie-chart-wrap">
+        <div class="bg">
+            <div class="bg-pattern"></div>
+            <img src="./img/bg_moviechart.jpg" alt="bg img">
+        </div>
+        <div class="container">
+            <div class="movie-chart">
+                <h2><button>박스오피스</button></h2>
+                <div class="more-btn">
+                    <a href="#">더 많은 영화보기 <img src="./img/ico-more-cross-gray.png" alt="더보기"></a>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="posterwrap">
+                            <a href="#"><img src="./img/rank-movie-1.jpg" alt="문폴"></a>
+                            <div class="wrap">
+                                <div class="summary">
+                                    1969년 인류의 위대한 도전, 달 착륙 성공 <br>
+                                    2022년 인류 최후의 재난, 달이 지구와 충돌한다! <br>
+                                    <br>
+                                    궤도를 이탈한 달이 지구를 향해 떨어지기 시작하면서 지구의 중력과 모든 물리적인 법칙이 붕괴된다. <br>
+                                    거대한 해일과 지진, 화산폭발, 쓰나미와 이상기후까지 상상조차 불가능했던 모든 재난으로 전 세계는 공포와 혼란에 빠진다. <br>
+                                    달과 충돌까지 남은 시간은 단 30일. NASA 연구원 ‘파울러’(할리 베리), 전직 우주 비행사 ‘브라이언’(패트릭 윌슨), <br>
+                                    그리고 우주 덕후 ‘KC’(존 브래들리)는 달을 막을 방법을 찾기 위해 마지막 우주선에 오른다. <br>
+                                    인류 멸망 D-30일, 추락하는 달을 반드시 멈춰야 한다
+                                </div>
+                                <div class="review">
+                                    <p>관람평 <span>0</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a class="like" href="javascript:"><i class="grey-heart"></i> 446</a>
+                            <a class="booking" href="javascript:">예매</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="posterwrap">
+                            <a href="#"><img src="./img/rank-movie-2.jpg" alt="스펜서"></a>
+                            <div class="wrap">
+                                <div class="summary">
+                                    전 영국 왕세자비 다이애나 스펜서의 새로운 이야기를 담은 영화
+                                </div>
+                                <div class="review">
+                                    <p>관람평 <span>0</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a class="like" href="javascript:"><i class="grey-heart"></i>402</a>
+                            <a class="booking" href="javascript:">예매</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="posterwrap">
+                            <a href="#"><img src="./img/rank-movie-3.jpg" alt="도어맨"></a>
+                            <div class="wrap">
+                                <div class="summary">
+                                    해병대 복무 중 테러집단의 공격으로 대사와 가족을 잃은 알리(루비 로즈)는 제대 후 고급 아파트 도어맨으로 새로운 삶을 시작한다. <br>
+                                    <br>
+                                    우연히 그곳에 거주하고 있던 형부와 조카들을 만나 부활절 저녁을 함께 하던 그 시각, 빅터(장 르노)는 수십 년 전 동료 버나드가 빼돌린 고가의 미술품을 노리고 무장 괴한들과 함께 아파트에 침입하는데…. <br>
+                                    한편, 리모델링을 위해 대부분의 입주자들이 이주해 텅 비어있는 아파트를 장악하고 미술품들을 찾던 빅터 일당은 버나드가 원래 지내던 곳이 알리의 형부 가족들의 집이라는 사실을 알고 10층으로 향한다! <br>
+                                    위기에 처한 형부와 조카들을 구하기 위해 고군분투하는 알리는 과연 무장 괴한들을 제압할 수 있을 것인가?!
+                                </div>
+                                <div class="review">
+                                    <p>관람평 <span>0</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a class="like" href="javascript:"><i class="grey-heart"></i>88</a>
+                            <a class="booking" href="javascript:">예매</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="posterwrap">
+                            <a href="#"><img src="./img/rank-movie-4.jpg" alt="더 배트맨"></a>
+                            <div class="wrap">
+                                <div class="summary">
+                                    영웅이 될 것인가 악당이 될 것인가 <br>
+                                    운명을 결정할 선택만이 남았다 <br>
+                                    <br>
+                                    지난 2년간 고담시의 어둠 속에서 범법자들을 응징하며 배트맨으로 살아온 브루스 웨인. 알프레드와 제임스 고든 경위의 도움 아래, 도시의 부패한 공직자들과 고위 관료들 사이에서 복수의 화신으로 활약한다. 고담의 시장 선거를 앞두고 고담의 엘리트 집단을 목표로 잔악한 연쇄살인을 저지르는 수수께끼 킬러 리들러가 나타나자, 최고의 탐정 브루스 웨인이 수사에 나서고 남겨진 단서를 풀어가며 캣우먼, 펭귄, 카마인 팔코네, 리들러를 차례대로 만난다. 사이코 범인의 미스터리를 수사하면서 그 모든 증거가 자신을 향한 의도적인 메시지였음을 깨닫고, 리들러에게 농락 당한 배트맨은 광기에 사로잡힌다. 범인의 무자비한 계획을 막고 오랫동안 고담시를 썩게 만든 권력 부패의 고리를 끊어야 하지만, 부모님의 죽음에 얽힌 진실이 밝혀지자 복수와 정의 사이에서 갈등한다.
+                                    선과 악, 빛과 어둠, 영웅과 악당, 정의와 복수.. 무엇을 선택할 것인가
+                                </div>
+                                <div class="review">
+                                    <p>관람평 <span>8.3</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a class="like" href="javascript:"><i class="grey-heart"></i>1.1k</a>
+                            <a class="booking" href="javascript:">예매</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="booking-wrap">
+                    <div class="search">
+                        <input type="text" placeholder="영화명을 입력해주세요">
+                        <a href="#"><img src="./img/ico-search-white.png" alt="search"></a>
+                    </div>
+                    <div class="timetable">
+                        <a href="#">상영시간표</a>
+                    </div>
+                    <div class="boxoffice">
+                        <a href="#">박스오피스</a>
+                    </div>
+                    <div class="quick">
+                        <a href="#">빠른 예매</a>
+                    </div>
+                </div>
+                <div class="moving-mouse">
+                    <img src="./img/ico-mouse.png" alt="mouse">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="benefit-wrap">
+        <div class="container">
+            <div class="title">
+                <h2>혜택</h2>
+                <a href="javascript:" class="more-btn"></a>
+            </div>
+            <div class="flex">
+                <div class="benefit">
+                    <div class="slide">
+                        <div class="position">
+                            <div class="txt">
+                                <a href="javascript:"><img src="./img/b-slide-txt_1.jpg" alt="오리지널 티켓"></a>
+                                <a href="javascript:"><img src="./img/b-slide-txt_2.jpg" alt="멤버십 이벤트"></a>
+                                <a href="javascript:"><img src="./img/b-slide-txt_3.jpg" alt="u+멤버십 할인"></a>
+                            </div>
+                            <div class="bg">
+                                <a href="javasript:"><img src="./img/b-slide-bg_1.jpg" alt="오리지널 티켓"></a>
+                                <a href="javasript:"><img src="./img/b-slide-bg_2.jpg" alt="멤버십 이벤트"></a>
+                                <a href="javasript:"><img src="./img/b-slide-bg_3.jpg" alt="u+멤버십 할인"></a>
+                            </div>
+                            <div class="ctr-bar"></div>
+                        </div>
+                    </div>
+                    <div class="banner">
+                        <div class="b-large">
+                            <a href="javascript:"><img src="./img/b-large.jpg" alt="VIP 선정기준"></a>
+                        </div>
+                        <div class="b-small">
+                            <a href="javascript:"><img src="./img/b-small.jpg" alt="페이북 출석체크"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ad">
+                    <a href="javascript:"><img src="./img/benefit-ad.jpg" alt="현대해상"></a>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="javascript:">VIP LOUNGE</a></li>
+                    <li><a href="javascript:">멤버십</a></li>
+                    <li><a href="javascript:">할인카드안내</a></li>
+                    <li><a href="javascript:">이벤트</a></li>
+                    <li><a href="javascript:">스토어</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg-color">
+            </span>
+        </div>
+    </section>
+    <section class="curation">
+        <div class="container">
+            <div class="title">
+                <h2>큐레이션</h2>
+                <a href="javascript:" class="more-btn">큐레이션 더보기 <img src="./img/ico-more-cross-gray.png" alt="더보기"></a>
+            </div>
+            <div class="cu-area">
+                <div class="cu-left">
+                    <div class="main-poster">
+                        <a href="javascript:"><img src="./img/curation-main-poster.jpg" alt="에우리디체"></a>
+                        <img src="./img/bg-bage-curation-classic.png" alt="메가박스 클래식 소사이어티">
+                    </div>
+                    <div class="button">
+                        <a class="info" href="#">상세정보</a>
+                        <a class="booking" href="#">예매</a>
+                    </div>
+                </div>
+                <div class="cu-right">
+                    <div class="txt">
+                        <h3>#클래식소사이어티</h3>
+                        <p class="tit">[오페라] 에우리디체 @The Met</p>
+                        <p class="summary">
+                            연인 에우리디체의 눈으로 새롭게 바라본 오르페우스 신화.<br>
+                            오코인의 도발적인 음악과 짐머만의 몰입도 높은 연출이 포인트!
+                        </p>
+                        <p class="screen">
+                            [상영 정보] <br>
+                            상영지점 : 센트럴 / 코엑스 / 목동 / 성수 / 분당 / 킨텍스 <br>
+                            상영일정 : 2022년 3월 1일(화) ~ 3월 26일(토) / 화 19:00, 토 10:00 <br>
+                            러닝타임 : 172분 *인터미션 없음
+                        </p>
+                    </div>
+                    <ul class="sub-poster">
+                       <li><a href="javascript:">
+                            <img src="./img/bg-bage-curation-film-m.png" alt="필름소사이어티" class="film">
+                            <img src="./img/curation-sub-poster1.jpg" alt="레벤느망" class="poster">레벤느망</a>
+                        </li>
+                       <li><a href="javascript:">
+                            <img src="./img/bg-bage-curation-film-m.png" alt="필름소사이어티" class="film">
+                            <img src="./img/curation-sub-poster2.jpg" alt="그 남자는 타이타닉을 보고싶지 않았다" class="poster">그 남자는 타이타닉을 보고싶지 않았다</a>
+                        </li>
+                       <li><a href="javascript:">
+                            <img src="./img/bg-bage-curation-film-m.png" alt="필름소사이어티" class="film">
+                            <img src="./img/curation-sub-poster3.jpg" alt="피그" class="poster">피그</a>
+                        </li>
+                       <li><a href="javascript:">
+                            <img src="./img/bg-bage-curation-film-m.png" alt="필름소사이어티" class="film">
+                            <img src="./img/curation-sub-poster4.jpg" alt="우리가 사랑이라고 믿는 것" class="poster">우리가 사랑이라고 믿는 것</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info">
+        <div class="container">
+            <h2>메가박스 안내</h2>
+            <ul class="special">
+                <li class="dolby"><a href="javascript:"><img src="./img/bg-main-megainfo-dolby.png" alt="dolby"></a></li>
+                <li><a href="javascript:"><img src="./img/bg-main-megainfo-private.png" alt="private"></a></li>
+                <li><a href="javascript:"><img src="./img/bg-main-megainfo-boutique.png" alt="boutique"></a></li>
+                <li><a href="javascript:"><img src="./img/bg-main-megainfo-mx.png" alt="mx"></a></li>
+                <li><a href="javascript:"><img src="./img/bg-main-megainfo-comfort.png" alt="comfort"></a></li>
+                <li><a href="javascript:"><img src="./img/bg-main-megainfo-kids.png" alt="kids"></a></li>
+            </ul>
+            <div class="notice">
+                <p>지점</p>
+                <p><strong>[대구신세계(동대구)]</strong> [대구신세계점] MX관 리뉴얼 공사 안내</p>
+                <p class="date">2022.03.11</p>
+                <p class="more">더보기 <img src="./img/ico-arr-right-gray.png" alt="arrow rigft"></p>
+            </div>
+            <ul class="link">
+                <li><a href="javascript:"><img src="./img/ico-main-customer.png" alt="고객센터"> 고객센터</a></li>
+                <li><a href="javascript:"><img src="./img/ico-main-faq.png" alt="자주 묻는 질문">자주 묻는 질문</a></li>
+                <li><a href="javascript:"><img src="./img/ico-main-qna.png" alt="1:1 문의">1:1 문의</a></li>
+                <li><a href="javascript:"><img src="./img/ico-main-group.png" alt="단체/대관문의">단체/대관문의</a></li>
+                <li><a href="javascript:"><img src="./img/ico-main-lost.png" alt="분실물 문의/접수">분실물 문의/접수</a></li>
+                <li><a href="javascript:"><img src="./img/ico-main-boutique.png" alt="더 부티크 프라이빗 대관예매">더 부티크 프라이빗 <br> 대관예매</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="ad">
+        <div class="container">
+            <a href="javascript:">
+                <img src="./img/ad-mark.png" alt="ad mark" class="mark">
+                <img src="./img/ad_hyundai.jpg" alt="현대해상 자동자보험" class="ad-img">
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="f-top">
+                <ul class="fnb">
+                    <li><a href="javascript:">회사소개</a></li>
+                    <li><a href="javascript:">인재채용</a></li>
+                    <li><a href="javascript:">사회공헌</a></li>
+                    <li><a href="javascript:">제휴/광고/부대사업문의</a></li>
+                    <li><a href="javascript:">이용약관</a></li>
+                    <li><a href="javascript:">위치기반서비스 이용약관</a></li>
+                    <li><a href="javascript:" class="bold">개인정보처리방침</a></li>
+                    <li><a href="javascript:">윤리경영</a></li>
+                </ul>
+                <a href="javascript:" class="search"><img src="./img/ico-footer-search.png" alt="검색">극장찾기</a>
+            </div>
+            <div class="f-bottom">
+                <div class="ci">
+                    <img src="./img/footer-logo-opacity_new2.png" alt="메가박스ci">
+                </div>
+                <div class="f-info">
+                    <div>
+                        <address>서울특별시 마포구 월드컵로 240, 지상2층(성산동, 월드컵주경기장)</address>
+                        <p>ARS 1544-0070</p>
+                    </div>
+                    <p>대표자명 홍정인</p>
+                    <p>· 개인정보보호책임자 공성진</p>
+                    <p>· 사업자등록번호 211-86-59478</p>
+                    <p>· 통신판매업신고번호 제 2020-서울마포-4545 호</p>
+                    <p class="copy">COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved</p>
+                </div>
+                <ul class="f-sns">
+                    <li><a href="javascript:"><img src="./img/ico-twitter.png" alt="트위터"></a></li>
+                    <li><a href="javascript:"><img src="./img/ico-facebook.png" alt="페이스북"></a></li>
+                    <li><a href="javascript:"><img src="./img/ico-instagram.png" alt="인스타그램"></a></li>
+                    <li><a href="javascript:"><img src="./img/ico-googleplay.png" alt="구글플레이"></a></li>
+                    <li><a href="javascript:"><img src="./img/ico-appstore.png" alt="앱스토어"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
