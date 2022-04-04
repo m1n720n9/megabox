@@ -163,79 +163,6 @@ body{font-family: 'NanumBarunGothic','돋움',sans-serif;}
 .benefit-wrap .menu ul li a{font-size: 15px; color: #fff;}
 .benefit-wrap .bg-color{display: block; width: 100%; height: 330px; background: #503396; position: absolute;bottom:-100px; z-index: 1;}
 
-/* web 1920, tab 840 margin 32, mob 480 margin 16 */
-@media screen and (max-width:1160px) {
-    .container{width: 100%; padding: 0 32px; box-sizing: border-box;}
-    #nav .gnb img{width: 27px;}
-    #nav .gnb-s img{width: 40.5px;}
-    .movie-chart .list li .posterwrap{width: 80%; height: 80%; margin: 0 auto;}
-    .movie-chart .list li .button{width: 80%; margin: 0 auto;}
-    .movie-chart .list li .button a{}
-    .movie-chart .list li .wrap .summary{font-size: 14px; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp: 5; height: 60%; overflow: hidden; text-align: left;}
-    .movie-chart .list li .wrap .review p{font-size: 0.733em; }
-    .movie-chart .list li .wrap .review span{font-size: 1.6em;margin-left: 19px;}
-    .benefit-wrap .flex .ad{display: none;}
-}
-@media screen and (max-width:1060px) {
-    #nav .left-gnb{margin-left: 50px;}
-    #nav .right-gnb{margin-right: 38px;}
-    .movie-chart .list li .button a{height: 90%; line-height: 34px;}
-    .movie-chart .list li .button .like i{left: 50%; transform: translate(-50%, -50%);}
-    .movie-chart .list li .button .like.on i{left: 50%; transform: translate(-50%, -50%);}
-    .movie-chart .list li .button .like span{display: none;}
-}
-@media screen and (max-width:960px) {
-    #nav .left-gnb{margin-left: 25px;}
-    #nav .right-gnb{margin-right: 19px;}
-    #nav .gnb>li:not(:last-child){margin-right: 50px;}
-    .sitemap .site p{font-size: 16px;}
-    .sitemap .site ul li a{font-size: 13px;}
-    .movie-chart .booking-wrap a{font-size: 14px;}
-    .movie-chart .booking-wrap .search .search-box{width: 180px;}
-    .movie-chart .booking-wrap .search button img{margin-left: -20px;}
-    .movie-chart .booking-wrap .search input::placeholder{font-size: 14px;}
-    .movie-chart .booking-wrap>div:not(:first-child)::before{content: none;}
-}
-/* tablet */
-@media screen and (max-width:840px) {
-    /* header */
-    #header .top-menu{display: none;}
-    #nav{margin-top: 20px;}
-    #nav .gnb{display: none;}
-    .movie-chart-wrap{margin-top: 30px;}
-    .movie-chart{padding-top: 0;}
-    .movie-chart .list li .wrap{display: none;}
-    .movie-chart .list li .button span{display: none;}
-    .movie-chart .list{flex-wrap: wrap;}
-    .movie-chart .list li{width: 33%;}
-    .movie-chart .list li:last-child{display: none;}
-    .movie-chart .booking-wrap{flex-wrap: wrap; justify-content: space-between; margin-top: 10px;}
-    .movie-chart .booking-wrap>div{width: 33%;}
-    .movie-chart .booking-wrap .search{display: none;}
-    .movie-chart .booking-wrap>div:nth-child(2)::before{content: none;}
-    /*
-    예매 버튼 크기 조절
-    movie-chart 슬라이드..?
-    header height 줄이기
-    nav search 수정
-    */
-}
-@media screen and (max-width:720px) {
-    /* header */
-    /* 상영시간표~빠른예매 조절 */
-
-}
-@media screen and (max-width:600px) {
-    /* header */
-    .movie-chart .list li .button a{height: 80%; line-height: 30px;}
-}
-/* mobile */
-@media screen and (max-width:480px) {
-    /* header */
-    .container{padding: 0 16px;}
-}
-
-
 /* curation */
 .curation{width: 100%; height: 840px; margin-top: 100px; padding-top: 50px; background: #252451;}
 .curation .title{display: flex; justify-content: space-between; margin-bottom: 40px;}
@@ -327,3 +254,75 @@ align-items: center;
 }
 .swiper1 .swiper-slide img {display: block; width: 300px; height:230px; object-fit: cover;}
 .swiper2 .swiper-slide img {display: block; width: 385px; height:325px; object-fit: cover;}
+
+/* web 1920, tab 840 margin 32, mob 480 margin 16 */
+@media screen and (max-width:1160px) {
+    .container{width: 100%; padding: 0 32px; box-sizing: border-box;}
+    #nav .gnb img{width: 27px;}
+    #nav .gnb-s img{width: 40.5px;}
+    .movie-chart .list li .posterwrap{width: 80%; height: 80%; margin: 0 auto;}
+    .movie-chart .list li .button{width: 80%; margin: 0 auto;}
+    .movie-chart .list li .button a{}
+    .movie-chart .list li .wrap .summary{font-size: 14px; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp: 5; height: 60%; overflow: hidden; text-align: left;}
+    .movie-chart .list li .wrap .review p{font-size: 0.733em; }
+    .movie-chart .list li .wrap .review span{font-size: 1.6em;margin-left: 19px;}
+    .benefit-wrap .flex .ad{display: none;}
+}
+@media screen and (max-width:1060px) {
+    #nav .left-gnb{margin-left: 50px;}
+    #nav .right-gnb{margin-right: 38px;}
+    .movie-chart .list li .button a{height: 90%; line-height: 34px;}
+    .movie-chart .list li .button .like i{left: 50%; transform: translate(-50%, -50%);}
+    .movie-chart .list li .button .like.on i{left: 50%; transform: translate(-50%, -50%);}
+    .movie-chart .list li .button .like span{display: none;}
+}
+@media screen and (max-width:960px) {
+    #nav .left-gnb{margin-left: 25px;}
+    #nav .right-gnb{margin-right: 19px;}
+    #nav .gnb>li:not(:last-child){margin-right: 50px;}
+    .sitemap .site p{font-size: 16px;}
+    .sitemap .site ul li a{font-size: 13px;}
+    .movie-chart .booking-wrap a{font-size: 14px;}
+    .movie-chart .booking-wrap .search .search-box{width: 180px;}
+    .movie-chart .booking-wrap .search button img{margin-left: -20px;}
+    .movie-chart .booking-wrap .search input::placeholder{font-size: 14px;}
+    .movie-chart .booking-wrap>div:not(:first-child)::before{content: none;}
+}
+/* tablet */
+@media screen and (max-width:840px) {
+    /* header */
+    #header .top-menu{display: none;}
+    #nav{margin-top: 20px;}
+    #nav .gnb{display: none;}
+    .movie-chart-wrap{margin-top: 30px;}
+    .movie-chart{padding-top: 0;}
+    .movie-chart .list li .wrap{display: none;}
+    .movie-chart .list li .button span{display: none;}
+    .movie-chart .list{flex-wrap: wrap;}
+    .movie-chart .list li{width: 33%;}
+    .movie-chart .list li:last-child{display: none;}
+    .movie-chart .booking-wrap{flex-wrap: wrap; justify-content: space-between; margin-top: 10px;}
+    .movie-chart .booking-wrap>div{width: 33%;}
+    .movie-chart .booking-wrap .search{display: none;}
+    .movie-chart .booking-wrap>div:nth-child(2)::before{content: none;}
+    /*
+    예매 버튼 크기 조절
+    movie-chart 슬라이드..?
+    header height 줄이기
+    nav search 수정
+    */
+}
+@media screen and (max-width:720px) {
+    /* header */
+    /* 상영시간표~빠른예매 조절 */
+
+}
+@media screen and (max-width:600px) {
+    /* header */
+    .movie-chart .list li .button a{height: 80%; line-height: 30px;}
+}
+/* mobile */
+@media screen and (max-width:480px) {
+    /* header */
+    .container{padding: 0 16px;}
+}
