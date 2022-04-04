@@ -13,37 +13,36 @@ let nowActive = "none"
 sitemapBtn.addEventListener('click', function(){
     if(nowActive === "none" || nowActive === "search" || nowActive === "mypage"){
         // style change
-        sitemap.style.display="block";
+        sitemap.classList.add('on')
         sitemapBtn.classList.add('on')
         searchBtn.classList.remove('on')
         mypageBtn.classList.remove('on')
         imgSitemap.src="./img/btn-header-layer-close.png"
         imgSearch.src="./img/ico-search-white.png"
         imgMypage.src="./img/ico-mymega-white.png"
-        searchWrap.style.display="none";
-        mypage.style.display="none";
+        searchWrap.classList.remove('on')
+        mypage.classList.remove('on')
         // state change
         nowActive = "sitemap"
     } else{
         // style change
-        sitemap.style.display="none";
+        sitemap.classList.remove('on')
         sitemapBtn.classList.remove('on')
         imgSitemap.src="./img/ico-sitemap-white.png"
         // state change
         nowActive = "none"
     }   
 });
-
 searchBtn.addEventListener('click', function(){
     if(nowActive === "none" || nowActive === "sitemap" || nowActive === "mypage"){
         // style change
-        searchWrap.style.display="block";
+        searchWrap.classList.add('on')
         searchBtn.classList.add('on')
         imgSearch.src="./img/btn-header-layer-close.png"
         imgSitemap.src="./img/ico-sitemap-white.png"
         imgMypage.src="./img/ico-mymega-white.png"
-        sitemap.style.display="none";
-        mypage.style.display="none";
+        sitemap.classList.remove('on')
+        mypage.classList.remove('on')
         sitemapBtn.classList.remove('on')
         mypageBtn.classList.remove('on')
         bookingTop.classList.add('on');
@@ -52,38 +51,34 @@ searchBtn.addEventListener('click', function(){
         audienceTopList.classList.remove('active');
         bookingTopImg.classList.add('active');
         audienceTopImg.classList.remove('active');
-
         // state change
         nowActive = "search"; 
-
-
     }else{
         // style change
-        searchWrap.style.display="none";
+        searchWrap.classList.remove('on')
         searchBtn.classList.remove('on')
         imgSearch.src="./img/ico-search-white.png"
         // state change
         nowActive="none";
     }
 });
-
 mypageBtn.addEventListener('click', function(){
     if(nowActive === "none" || nowActive === "search" || nowActive === "sitemap"){
         // style change
-        mypage.style.display="block";
+        mypage.classList.add('on')
         mypageBtn.classList.add('on')
         sitemapBtn.classList.remove('on')
         searchBtn.classList.remove('on')
         imgMypage.src="./img/btn-header-layer-close.png"
         imgSitemap.src="./img/ico-sitemap-white.png"
         imgSearch.src="./img/ico-search-white.png"
-        searchWrap.style.display="none";
-        sitemap.style.display="none";
+        searchWrap.classList.remove('on')
+        sitemap.classList.remove('on')
         // state change
         nowActive = "mypage"
     } else{
         // style change
-        mypage.style.display="none";
+        mypage.classList.remove('on')
         mypageBtn.classList.remove('on')
         imgMypage.src="./img/ico-mymega-white.png"
         // state change
@@ -124,15 +119,15 @@ const gnbBg=document.querySelector('.gnb-bg');
 for(let i=0; i<depth1.length; i++){
     depth1[i].addEventListener('mouseover', function(){
         depth2[i].classList.add('on');
-        gnbBg.style.display='block';
+        gnbBg.classList.add('on');
         depth1[i].classList.add('active');
     });
     notdepth1.addEventListener('mouseover', function(){
-        gnbBg.style.display='none';
+        gnbBg.classList.remove('on');
     });
     depth1[i].addEventListener('mouseout', function(){
         depth2[i].classList.remove('on');
-        gnbBg.style.display='none';
+        gnbBg.classList.remove('on');
         depth1[i].classList.remove('active');
     });
 };
@@ -169,13 +164,13 @@ const mouseMove=document.querySelector('.moving-mouse');
 let b = true
 setInterval(function(){
     if(b==true){
-        mouseMove.style.top= 10+'px';
+        mouseMove.classList.add('up')
         b=false;
     }else{
-        mouseMove.style.top= 0;
+        mouseMove.classList.remove('up')
         b=true;
     }
-},500);
+},1000);
 
 /* info */
 const blackImg=document.querySelectorAll('.info .special>li');

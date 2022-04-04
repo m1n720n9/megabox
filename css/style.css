@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 body{font-family: 'NanumBarunGothic','돋움',sans-serif;}
 
 /* 공통속성 */
@@ -7,11 +6,6 @@ body{font-family: 'NanumBarunGothic','돋움',sans-serif;}
 /* 레이아웃 */
 #header{width: 100%; height: 91px; background: url(../img/bg-movie-detail-pattern.png)  rgba(0,0,0,.3); border-bottom: 1px solid rgba(255,255,255,.2); position: relative; z-index: 999;}
 .movie-chart-wrap{width: 100%; height: 830px; margin-top: 50px;}
-/* .benefit-wrap{display: none;} */
-.curation{display: none;}
-.info{display: none;}
-.ad-wrap{display: none;}
-footer{display: none;}
 
 /* pc */
 /* header */
@@ -24,6 +18,7 @@ footer{display: none;}
 #nav{display: flex;  width: 100%;  margin-top: 15px; justify-content: space-between; padding-bottom: 20px; position: relative;}
 #nav .left-nav, #nav .right-nav{display: flex;}
 #nav .link-area {display:flex; width: 74px;}
+
 #nav .link-area .sitemap-btn{width: 36px; height: 36px; margin-right: 10px; margin-left: 5px;}
 #nav .link-area .sitemap-btn img{width: 24px; height: 18px;}
 #nav .link-area .sitemap-btn.on img{width: 36px; height: 36px; margin-right: 15px; margin-top: -10px}
@@ -39,6 +34,7 @@ footer{display: none;}
 #nav .gnb .depth2{height: 44px; position: absolute; top: 37px; z-index: 3; display: none;}
 #nav .gnb .depth2.on{display: block;}
 .gnb-bg{display: none; width: 100%; height: 44px; background: #888; position: relative; top: 1px; background: rgba(0,0,0,.3);}
+.gnb-bg.on{display: block}
 #nav .gnb .depth2-1{left: 9%; }
 #nav .gnb .depth2-2{left: 12%;}
 #nav .gnb .depth2-3{left: 28%;}
@@ -55,6 +51,7 @@ footer{display: none;}
 
 /* site map {display: none}*/
 .sitemap{width: 100%; position: absolute; top: 92px; background: #333; display: none; z-index: 10;}
+.sitemap.on{display: block;}
 .sitemap .site_wrap{display: flex; flex-wrap: wrap; position: relative; justify-content: space-between;}
 .sitemap h2{font-size: 22px; color: #fff; padding-top: 50px; margin-bottom: 20px;}
 .sitemap .site p{font-size: 18px; color: #fff; border-top: 1px solid rgba(68,68,68,.5); border-bottom: 1px solid rgba(68,68,68,.5);  padding: 10px 0;}
@@ -67,6 +64,7 @@ footer{display: none;}
 
 /* search-wrap {display: none} */
 .search-wrap{width: 100%; position: absolute; top: 92px; background: #333; background: #351f67; display: none; z-index: 10;}
+.search-wrap.on{display: block;}
 .search-wrap .tab-rank{margin: 50px 0 30px 0;}
 .search-wrap .tab-rank ul{display: flex;}
 .search-wrap .tab-rank ul li{ margin-right: 25px; padding-bottom: 5px;}
@@ -88,6 +86,7 @@ footer{display: none;}
 
 /* mypage-wrap {display: none} */
 .mypage-wrap{position: absolute; top: 92px; width: 100%; background: #037b94; text-align: center; padding: 60px 0; display: none; z-index: 10;}
+.mypage-wrap.on{display: block;}
 .mypage-wrap>p{color: #fff; font-size:0.94em; margin-bottom: 20px;}
 .mypage-wrap>.login{margin: 0 auto; width: 100px; border: 1px solid #fff; border-radius: 5px; padding: 5px 10px; margin-bottom: 50px;}
 .mypage-wrap>.login a{font-size:0.94em; color: #fff;}
@@ -122,7 +121,6 @@ footer{display: none;}
 .movie-chart .booking-wrap{width: 100%; display: flex;  margin-top: 50px; position: relative;}
 .movie-chart .booking-wrap>div{width: 25%; background:  rgba(0,0,0,0.2);}
 .movie-chart .booking-wrap>div:not(:first-child)::before{content: ""; width: 1px; height: 30px; background: #888; display: block; position: absolute; top: 50%; transform: translateY(-50%);}
-/* .movie-chart .booking-wrap .search{padding-top: 22.5px;} */
 .movie-chart .booking-wrap .search .search-box{width: 190px; height: 28px; margin: 0 auto; padding-top: 30px; border-bottom: 1px solid #423e3e;}
 .movie-chart .booking-wrap .search input{border: none; background-color: transparent; text-align: center;}
 .movie-chart .booking-wrap .search input::placeholder{color: #fff;}
@@ -133,23 +131,19 @@ footer{display: none;}
 .movie-chart .booking-wrap .timetable i{background: url(../img/ico-schedule-main.png) no-repeat; width: 24px; height: 26px; display: inline-block; position: relative; top: 8px; right: 3px;}
 .movie-chart .booking-wrap .boxoffice i{background: url(../img/ico-boxoffice-main.png) no-repeat 50% center; width: 26px; height: 24px; display: inline-block; position: relative; top: 8px; right: 3px;}
 .movie-chart .booking-wrap .quick i{background: url(../img/ico-quick-reserve-main.png)  no-repeat 50% center; width: 29px; height: 25px; display: inline-block; position: relative; top: 8px; right: 3px;}
-.movie-chart .moving-mouse{width: 16px; height: 24px; margin: 0 auto; margin-top: 30px; position: relative; top: 0; transition: all .5s;}
-
+.movie-chart .moving-mouse{width: 16px; height: 24px; margin: 0 auto; margin-top: 30px; position: relative; top: 0; transition: all 3s;}
+.movie-chart .moving-mouse.up{top: 20px; transition: all 2s;}
 
 /* .benefit-wrap */
 .benefit-wrap{position: relative;}
 .benefit-wrap .title h2{font-size: 2em; color: #351f66;}
 .benefit-wrap .flex{display: flex; z-index: 3; position: relative;}
-.benefit-wrap .flex .benefit{width: 65%;}
-.benefit-wrap .flex .ad{width: 35%;}
-/* 
-.benefit-wrap .slide{width: 100%; height: 325px;}
+.benefit-wrap .slide{width: 685px; height: 325px;}
 .benefit-wrap .slide .position{position: relative; display: flex;}
 .benefit-wrap .slide .txt{position: absolute; left: 0; width: 300px; height: 230px; overflow: hidden;}
-.benefit-wrap .slide .txt img{width: 100%; height: 100%;}
 .benefit-wrap .slide .bg{position: absolute; left: 300px; width: 385px; height: 325px; display: flex; overflow: hidden;}
-.benefit-wrap .slide .bg img{display: block; width: 100%; height: 100%;} */
-.benefit-wrap .slide .ctr-bar{width: 190px; height: 2px; position: relative; top: 250px; left: -700px;}
+.benefit-wrap .slide .bg img{display: block; width: 385px; height: 325px;}
+.benefit-wrap .slide .ctr-bar{width: 190px; height: 2px; position: relative; top: 250px;}
 .benefit-wrap .slide .ctr-bar span{width: 50%; height: 100%; background: #ddd; display: block; float: left;}
 .benefit-wrap .banner{display: flex;}
 .benefit-wrap .banner .b-large{width: 441px; height: 204px; margin-right: 20px;}
@@ -180,15 +174,8 @@ footer{display: none;}
     .movie-chart .list li .wrap .summary{font-size: 14px; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp: 5; height: 60%; overflow: hidden; text-align: left;}
     .movie-chart .list li .wrap .review p{font-size: 0.733em; }
     .movie-chart .list li .wrap .review span{font-size: 1.6em;margin-left: 19px;}
-    /* .benefit-wrap .slide{width: 90%} */
-    /* .benefit-wrap .banner{width: 90%;} */
     .benefit-wrap .flex .ad{display: none;}
-
-    /* .benefit-wrap .slide .txt{width: 300px; height: 230px;} */
-    /* .benefit-wrap .slide .bg{width: 385px; height: 325px; left: 270px;}
-    .benefit-wrap .slide .txt img{width: 90%; height: 90%;}
-    .benefit-wrap .slide .bg img{width: 90%; height: 90%; } */}
-
+}
 @media screen and (max-width:1060px) {
     #nav .left-gnb{margin-left: 50px;}
     #nav .right-gnb{margin-right: 38px;}
@@ -198,7 +185,6 @@ footer{display: none;}
     .movie-chart .list li .button .like span{display: none;}
 }
 @media screen and (max-width:960px) {
-    
     #nav .left-gnb{margin-left: 25px;}
     #nav .right-gnb{margin-right: 19px;}
     #nav .gnb>li:not(:last-child){margin-right: 50px;}
@@ -209,8 +195,6 @@ footer{display: none;}
     .movie-chart .booking-wrap .search button img{margin-left: -20px;}
     .movie-chart .booking-wrap .search input::placeholder{font-size: 14px;}
     .movie-chart .booking-wrap>div:not(:first-child)::before{content: none;}
-    
-
 }
 /* tablet */
 @media screen and (max-width:840px) {
@@ -235,7 +219,6 @@ footer{display: none;}
     header height 줄이기
     nav search 수정
     */
-
 }
 @media screen and (max-width:720px) {
     /* header */
@@ -276,7 +259,6 @@ footer{display: none;}
 .curation .cu-area .sub-poster{display: flex; width: 736px;}
 .curation .cu-area .sub-poster li{width: 25%; text-align: center; margin-right: 14px; position: relative;}
 .curation .cu-area .sub-poster li:last-child{margin-right: 0;}
-
 .curation .cu-area .sub-poster li a{width: 100%; display: block; color: #fff; font-style: .9375em; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; padding: 0 5px; }
 .curation .cu-area .sub-poster li:last-child a{padding: 0 0 0 5px; }
 .curation .cu-area .sub-poster li a img.film{width: 35px; height: 38px; position: absolute; top: -5px; left: 10px;}
@@ -304,7 +286,6 @@ footer{display: none;}
 .info .link{display: flex; justify-content: space-between; padding: 50px 0;}
 .info .link li{text-align: center; width: 16.66666%;}
 .info .link li a img{width: auto; height: auto; display: block; margin: 0 auto; padding-bottom: 10px;}
-
 .ad-wrap a{position: relative;}
 .ad-wrap a .mark{width: 35px; height: 20px; position: absolute; right: 0; bottom: -3px; opacity: .6;}
 .ad-wrap a .ad-img{vertical-align: bottom;}
@@ -346,13 +327,3 @@ align-items: center;
 }
 .swiper1 .swiper-slide img {display: block; width: 300px; height:230px; object-fit: cover;}
 .swiper2 .swiper-slide img {display: block; width: 385px; height:325px; object-fit: cover;}
-
-
-
-.benefit-wrap .slide{width: 100%; height: 325px;}
-.benefit-wrap .slide .position{position: relative; display: flex;}
-.benefit-wrap .slide .txt{position: relative; left: 0; /* height: 230px; */ width: 300px; height: 230px; /* overflow: hidden; */}
-.benefit-wrap .slide .txt img{width: 300px; height: 230px;}
-.benefit-wrap .slide .bg{position: relative; /* left: 300px;  */height: 325px;/* width: 385px; height: 325px; */ display: flex; /* overflow: hidden; */}
-.benefit-wrap .slide .bg img{display: block; width: 385px; height: 325px;}
-
