@@ -7,9 +7,8 @@ body{font-family: 'NanumBarunGothic','돋움',sans-serif;}
 #header{width: 100%; height: 91px; background: url(../img/bg-movie-detail-pattern.png)  rgba(0,0,0,.3); border-bottom: 1px solid rgba(255,255,255,.2); position: relative; z-index: 999;}
 .movie-chart-wrap{width: 100%; height: 830px; margin-top: 50px;}
 
-/* pc */
 /* header */
-.logo{position: absolute; top: 23px; left: 50%; transform: translateX(-50%);}
+.logo{position: absolute; left: 50%; transform: translateX(-50%); text-indent: -9999px;}
 .logo a{background: url(../img/logo-white_new2.png) no-repeat; display: block;  width: 140px; height: 47px; margin: 0 auto;}
 .h-inner-top{width: 100%; display: flex; justify-content: space-between; padding-top: 15px;}
 .h-inner-top .top-menu{display: flex;}
@@ -77,7 +76,8 @@ body{font-family: 'NanumBarunGothic','돋움',sans-serif;}
 .search-wrap .rank-con .list ol li em{color: #fff; font-size: 28px; margin-right: 10px; vertical-align: middle;}
 .search-wrap .rank-con .list ol li a{color: #fff; font-size: 15px;}
 .search-wrap .h-search{border-bottom: 1px solid #fff; height: 59px; margin: 60px 120px 0 0; padding-left: 8px;}
-.search-wrap .h-search input{width: 350px; height: 59px; background: none; border: none;}
+.search-wrap .h-search input{width: 350px; height: 59px; background: none; border: none; color: #fff;}
+.search-wrap .h-search input:focus{outline: none;}
 .search-wrap .h-search input::placeholder{color: #fff; font-size: 17px; letter-spacing: -1px;}
 .search-wrap .h-search button{width: 60px; height: 60px; text-indent: -9999px; background: url(../img/btn-header-search.png) no-repeat center center;}
 
@@ -118,7 +118,8 @@ body{font-family: 'NanumBarunGothic','돋움',sans-serif;}
 .movie-chart .booking-wrap>div{width: 25%; background:  rgba(0,0,0,0.2);}
 .movie-chart .booking-wrap>div:not(:first-child)::before{content: ""; width: 1px; height: 30px; background: #888; display: block; position: absolute; top: 50%; transform: translateY(-50%);}
 .movie-chart .booking-wrap .search .search-box{width: 190px; height: 28px; margin: 0 auto; padding-top: 30px; border-bottom: 1px solid #423e3e;}
-.movie-chart .booking-wrap .search input{border: none; background-color: transparent; text-align: center;}
+.movie-chart .booking-wrap .search input{border: none; background-color: transparent; text-align: center; color: #fff;}
+.movie-chart .booking-wrap .search input:focus{outline: none;}
 .movie-chart .booking-wrap .search input::placeholder{color: #fff;}
 .movie-chart .booking-wrap .search button{/* position: relative; top: -80px; left: 100px;  */background: none; }
 .movie-chart .booking-wrap .search button img{width: 18px; height: 18px; vertical-align:middle; margin-left: -10px;}
